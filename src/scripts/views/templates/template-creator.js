@@ -28,36 +28,43 @@ const createRestaurantDetailTemplate = (resto) => `
       <tr>
         <td><h4>Rating</h4></td>
         <td> : </td>
-        <td><p>${resto.restaurant.rating}</p></td>
+        <td><p>⭐️ ${resto.restaurant.rating} </p></td>
       </tr>
       <tr>
         <td><h4>City</h4></td>
         <td> : </td>
-        <td><p>${resto.restaurant.city}</p></td>
+        <td><p> ${resto.restaurant.city} </p></td>
       </tr>
       <tr>
         <td><h4>Address</h4></td>
         <td> : </td>
-        <td><p>${resto.restaurant.address}</p></td>
+        <td><p> ${resto.restaurant.address} </p></td>
       </tr>
     </table>
   </div>
   <div class="resto__overview">
-    <h3>Description</h3>
+    <center><h3>Description</h3></center>
     <p>${resto.restaurant.description}</p>
+  </div>
+`;
+
+const createRestaurantDetailKategoriMenuTemplate = (menu) => `
+  <div class="resto__overview">
+    <center><h3>Categories</h3></center>
+    <p>${menu}</p>
   </div>
 `;
 
 const createRestaurantDetailFoodTemplate = (food) => `
   <div class="resto__overview">
-    <h3>Foods</h3>
+    <center><h3>Foods</h3></center>
     <p>${food}</p>
   </div>
 `;
 
 const createRestaurantDetailDrinkTemplate = (drink) => `
   <div class="resto__overview">
-    <h3>Drinks</h3>
+    <center><h3>Drinks</h3></center>
     <p>${drink}</p>
   </div>
 `;
@@ -91,4 +98,5 @@ export {
   createRestauranReviewTemplate,
   createLikeButtonTemplate,
   createLikedButtonTemplate,
+  createRestaurantDetailKategoriMenuTemplate,
 };

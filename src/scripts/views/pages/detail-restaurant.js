@@ -8,13 +8,18 @@ import {
   createRestaurantDetailFoodTemplate,
   createRestaurantDetailDrinkTemplate,
   createRestauranReviewTemplate,
+  createRestaurantDetailKategoriMenuTemplate,
 } from '../templates/template-creator';
 import favoriteButtonInitiator from '../../utils/favorite-button-initiator';
 
 const DetailRestaurant = {
   async render() {
     return `
-      <div id="resto" class="resto"></div>
+      <div id="resto" class="resto"></div><br/>
+      <div class="container-customerReview">
+        <center><h3 class="title-customerReview">Customer Reviews</h3><center>
+        <div id="customer-review" class="customer-review"></div>
+      </div>
       <div id="likeButtonContainer"></div>
     `;
   },
@@ -24,6 +29,13 @@ const DetailRestaurant = {
     const resto = await TheRestaurantDbSource.detailRestaurant(url.id);
     const restoContainer = document.querySelector('#resto');
     restoContainer.innerHTML = createRestaurantDetailTemplate(resto);
+
+    const categories = [];
+    for (let i = 0; i < resto.restaurant.categories.length; i += 1) {
+      categories.push(resto.restaurant.categories[i].name);
+    }
+    const menu = categories.join(', ');
+    restoContainer.innerHTML += createRestaurantDetailKategoriMenuTemplate(menu);
 
     const foods = [];
     for (let i = 0; i < resto.restaurant.menus.foods.length; i += 1) {
@@ -39,10 +51,10 @@ const DetailRestaurant = {
     const menudrink = drinks.join(', ');
     restoContainer.innerHTML += createRestaurantDetailDrinkTemplate(menudrink);
 
-    restoContainer.innerHTML += '<h3>Customer Reviews</h3>';
+    const customerReviewContainer = document.querySelector('#customer-review');
     for (let i = 0; i < resto.restaurant.customerReviews.length; i += 1) {
       // eslint-disable-next-line max-len
-      restoContainer.innerHTML += createRestauranReviewTemplate(resto.restaurant.customerReviews[i]);
+      customerReviewContainer.innerHTML += createRestauranReviewTemplate(resto.restaurant.customerReviews[i]);
     }
 
     const myrestaurant = resto.restaurant;

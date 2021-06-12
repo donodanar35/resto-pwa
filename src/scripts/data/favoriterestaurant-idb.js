@@ -1,14 +1,15 @@
+/* eslint-disable linebreak-style */
 import { openDB } from 'idb';
 import MYCONFIG from '../globals/myconfig';
- 
+
 const { DATABASE_NAME, DATABASE_VERSION, OBJECT_STORE_NAME } = MYCONFIG;
- 
+
 const dbPromise = openDB(DATABASE_NAME, DATABASE_VERSION, {
   upgrade(database) {
     database.createObjectStore(OBJECT_STORE_NAME, { keyPath: 'id' });
   },
 });
- 
+
 const FavoriteRestaurantIdb = {
   async getRestaurant(id) {
     return (await dbPromise).get(OBJECT_STORE_NAME, id);
@@ -23,5 +24,5 @@ const FavoriteRestaurantIdb = {
     return (await dbPromise).delete(OBJECT_STORE_NAME, id);
   },
 };
- 
+
 export default FavoriteRestaurantIdb;

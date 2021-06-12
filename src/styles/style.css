@@ -107,6 +107,20 @@
     margin: 32px 0;
   }
    
+  /*
+   customer review
+  */
+  .customer-review {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px 30px;
+    margin: 10px 0;
+  }
+
+  .container-customerReview {
+    margin: 0 auto;
+    min-width: 80%;
+  }
    
   /*
     Resto Item
@@ -196,7 +210,7 @@
 
   /*
    Like
-*/
+  */
 .like {
   font-size: 18px;
   position: fixed;
