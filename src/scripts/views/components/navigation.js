@@ -13,12 +13,12 @@ class NavigationComponent extends HTMLElement {
   render() {
     this.innerHTML = `
       <header class="app-bar">
+        <a class="nav-link skip-link" href="#mainContent" ><b>Menuju Konten Utama</b></a>
         <div class="app-bar__menu">
-            <a class="nav-link skip-link" href="#mainContent" ><b>Menuju Konten Utama</b></a>
             <button id="hamburgerButton">☰</button>
         </div>
         <div class="app-bar__brand">
-            <a class="nav-link" href=""><b>Kuliner Nusantara</b></a>
+          <a class="nav-link" href=""><b>Kuliner Nusantara</b></a>
         </div>
         <nav id="navigationDrawer" class="app-bar__navigation">
             <ul>
