@@ -1,4 +1,6 @@
 /* eslint-disable linebreak-style */
+/* eslint-disable no-console */
+/* eslint-disable linebreak-style */
 /* eslint-disable no-restricted-globals */
 /* eslint-disable linebreak-style */
 import 'regenerator-runtime';

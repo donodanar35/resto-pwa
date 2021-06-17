@@ -1,4 +1,6 @@
 /* eslint-disable linebreak-style */
+/* eslint-disable no-console */
+/* eslint-disable linebreak-style */
 import TheRestaurantDbSource from '../../data/therestaurantdb-source';
 import { createRestaurantItemTemplate } from '../templates/template-creator';
 

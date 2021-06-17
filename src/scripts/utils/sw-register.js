@@ -1,4 +1,6 @@
 /* eslint-disable linebreak-style */
+/* eslint-disable no-console */
+/* eslint-disable linebreak-style */
 import runtime from 'serviceworker-webpack-plugin/lib/runtime';
 
 const swRegister = async () => {
