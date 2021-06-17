@@ -7,7 +7,7 @@ import { createRestaurantItemTemplate } from '../templates/template-creator';
 const ListRestaurant = {
   async render() {
     return `
-      <div class="content">
+      <div class="content" id="toContent">
         <h2 class="content__heading"><center>Jelajahi restoran dan kuliner di berbagai daerah Nusantara</center></h2>
         <div id="restaurants" class="restaurants">
         </div>

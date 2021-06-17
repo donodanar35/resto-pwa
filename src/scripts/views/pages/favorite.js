@@ -5,7 +5,7 @@ import { createRestaurantItemTemplate } from '../templates/template-creator';
 const favorite = {
   async render() {
     return `
-      <div class="content">
+      <div class="content" id="toContent">
         <h2 class="content__heading"><center>Restoran Favorit</center></h2>
         <div id="restaurants" class="restaurants">
         </div>

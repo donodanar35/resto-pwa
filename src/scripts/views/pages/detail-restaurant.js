@@ -15,7 +15,7 @@ import favoriteButtonInitiator from '../../utils/favorite-button-initiator';
 const DetailRestaurant = {
   async render() {
     return `
-      <div id="resto" class="resto"></div><br/>
+      <div id="resto" class="resto" id="toContent"></div><br/>
       <div class="container-customerReview">
         <center><h3 class="title-customerReview">Customer Reviews</h3><center>
         <div id="customer-review" class="customer-review"></div>
