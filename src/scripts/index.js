@@ -4,6 +4,7 @@ import 'regenerator-runtime';
 import '../styles/style.css';
 import '../styles/responsive.css';
 import '../styles/css2.css';
+import './utils/like';
 import './views/components/navigation';
 import './views/components/jumbotron.js';
 import './views/components/footer.js';
