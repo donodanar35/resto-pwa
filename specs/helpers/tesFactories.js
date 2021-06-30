@@ -1,7 +1,7 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable import/prefer-default-export */
 /* eslint-disable linebreak-style */
-import favoriteButtonInitiator from '../../src/scripts/utils/favorite-button-initiator';
+import favoriteButtonInitiator from '../../src/scripts/utils/favorite-button-presenter';
 
 const createLikeButtonPresenterWithRestaurant = async (resto) => {
   await favoriteButtonInitiator.init({
