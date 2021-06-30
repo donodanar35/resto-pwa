@@ -10,7 +10,7 @@ import {
   createRestauranReviewTemplate,
   createRestaurantDetailKategoriMenuTemplate,
 } from '../templates/template-creator';
-import favoriteButtonInitiator from '../../utils/favorite-button-initiator';
+import favoriteButtonInitiator from '../../utils/favorite-button-presenter';
 
 const DetailRestaurant = {
   async render() {

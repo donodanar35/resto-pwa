@@ -1,4 +1,4 @@
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 640px) {
     .app-bar {
         grid-template-columns: 1fr auto;
         padding: 8px 32px;
@@ -49,12 +49,20 @@
     .customer-review {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .jumbotron {
+        background-image: url("../public/images/heros/resize/hero-image_4-medium.jpg");
+      }
   }
    
   @media screen and (min-width: 800px) {
     .app-bar .app-bar__brand h1 {
         font-size: 2em;
     }
+
+    .jumbotron {
+        background-image: url("../public/images/heros/resize/hero-image_4-medium.jpg");
+      }
   }
    
   @media screen and (min-width: 850px) {
@@ -65,17 +73,29 @@
     .customer-review {
         grid-template-columns: repeat(3, 1fr);
     }
+
+    .jumbotron {
+        background-image: url("../public/images/heros/resize/hero-image_4-medium.jpg");
+      }
   }
    
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1024px) {
     .restaurants {
         grid-template-columns: repeat(4, 1fr);
+    }
+
+    .jumbotron {
+        background-image: url("../public/images/heros/resize/hero-image_4-large.jpg");
     }
   }
    
   @media screen and (min-width: 1600px) {
     .restaurants {
         grid-template-columns: repeat(5, 1fr);
+    }
+
+    .jumbotron {
+        background-image: url("../public/images/heros/resize/hero-image_4-large.jpg");
     }
   }
 

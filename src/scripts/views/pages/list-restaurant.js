@@ -19,7 +19,7 @@ const ListRestaurant = {
     const resto = await TheRestaurantDbSource.listRestaurant();
     const restoContainer = document.querySelector('#restaurants');
     for (let i = 0; i < resto.restaurants.length; i += 1) {
-      console.log(resto.restaurants[i].name);
+      // console.log(resto.restaurants[i].name);
       restoContainer.innerHTML += createRestaurantItemTemplate(resto.restaurants[i]);
     }
   },

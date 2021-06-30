@@ -1,4 +1,8 @@
 /* eslint-disable linebreak-style */
+/* eslint-disable no-undef */
+/* eslint-disable linebreak-style */
+/* eslint-disable no-console */
+/* eslint-disable linebreak-style */
 import FavoriteRestaurantIdb from '../../data/favoriterestaurant-idb';
 import { createRestaurantItemTemplate } from '../templates/template-creator';
 

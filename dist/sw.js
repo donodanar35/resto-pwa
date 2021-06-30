@@ -1,7 +1,21 @@
 var serviceWorkerOption = {
   "assets": [
-    "/5d982326781d6f8ea98b7c2d8f958fc5.jpg",
-    "/bundle.js",
+    "/20f40df21a485f522d0631c67139f334.jpg",
+    "/87180b907851c21df69d07ef8816dcc7.jpg",
+    "/8e438958ab0a4ec5a22813817a0837e2.jpg",
+    "/0.bundle.js",
+    "/defaultVendors~index~29527fdd.bundle.js",
+    "/defaultVendors~index~5e159eb5.bundle.js",
+    "/defaultVendors~index~ec8c427e.bundle.js",
+    "/defaultVendors~index~f928e598.bundle.js",
+    "/index~25ce43e8.bundle.js",
+    "/index~29f26ec8.bundle.js",
+    "/index~3d9b8e9e.bundle.js",
+    "/index~73c02ba8.bundle.js",
+    "/index~a7463e62.bundle.js",
+    "/index~db4d165c.bundle.js",
+    "/11.bundle.js",
+    "/12.bundle.js",
     "/manifest.json",
     "/images/heros/hero-image_4.jpg",
     "/images/icons/favicon.png",
@@ -13,6 +27,9 @@ var serviceWorkerOption = {
     "/images/icons/icon-512x512.png",
     "/images/icons/icon-72x72.png",
     "/images/icons/icon-96x96.png",
+    "/images/heros/resize/hero-image_4-large.jpg",
+    "/images/heros/resize/hero-image_4-medium.jpg",
+    "/images/heros/resize/hero-image_4-small.jpg",
     "/index.html"
   ]
 };
