@@ -1,4 +1,8 @@
 /* eslint-disable linebreak-style */
+/* eslint-disable no-shadow */
+/* eslint-disable linebreak-style */
+/* eslint-disable no-use-before-define */
+/* eslint-disable linebreak-style */
 /* eslint-disable no-prototype-builtins */
 /* eslint-disable linebreak-style */
 /* eslint-disable consistent-return */
@@ -11,20 +15,12 @@ import { openDB } from 'idb';
 import MYCONFIG from '../globals/myconfig';
 
 const { DATABASE_NAME, DATABASE_VERSION, OBJECT_STORE_NAME } = MYCONFIG;
+
 const dbPromise = openDB(DATABASE_NAME, DATABASE_VERSION, {
   upgrade(database) {
     database.createObjectStore(OBJECT_STORE_NAME, { keyPath: 'id' });
   },
 });
-
-/* async function dbPromise() {
-  const { default: openDB } = await import('idb');
-  openDB(DATABASE_NAME, DATABASE_VERSION, {
-    upgrade(database) {
-      database.createObjectStore(OBJECT_STORE_NAME, { keyPath: 'id' });
-    },
-  });
-} */
 
 const FavoriteRestaurantIdb = {
   async getRestaurant(id) {

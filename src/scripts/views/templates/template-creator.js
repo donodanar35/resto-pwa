@@ -78,18 +78,6 @@ const createRestauranReviewTemplate = (resto) => `
   </div>
   `;
 
-const createLikeButtonTemplate = () => `
-  <button aria-label="like this resto" id="likeButton" class="like first">
-     Like
-  </button>
-`;
-
-const createLikedButtonTemplate = () => `
-  <button aria-label="unlike this resto" id="likeButton" class="liked first">
-    Liked
-  </button>
-`;
-
 const createLikeRestoButtonTemplate = () => `
   <button aria-label="like this resto" id="likeButton" class="like first">
      Like
@@ -108,8 +96,6 @@ export {
   createRestaurantDetailFoodTemplate,
   createRestaurantDetailDrinkTemplate,
   createRestauranReviewTemplate,
-  createLikeButtonTemplate,
-  createLikedButtonTemplate,
   createLikeRestoButtonTemplate,
   createUnlikeRestoButtonTemplate,
   createRestaurantDetailKategoriMenuTemplate,
